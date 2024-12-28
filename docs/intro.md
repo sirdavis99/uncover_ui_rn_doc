@@ -1,47 +1,63 @@
 ---
 sidebar_position: 1
+
+id: intro
+title: Introduction
+# slug: /
 ---
 
-# Tutorial Intro
+# Uncover UI for React Native
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the documentation for **@uncover-ui/react-native** — your go-to UI component library for React Native and Expo!
+
+## About the Library
+
+- **Name:** `@uncover-ui/react-native`  
+- **Expo Version:** `@uncover-ui/expo`  
+- **Version:** 1.2.76  
+- **License:** MIT  
+- **Author:** Uncover the Future  
+- **Repository:** [GitHub Repository](https://github.com/uncoverthefuture-org/uncover-ui/tree/master/packages/react-native)
+
+This library offers a seamless way to integrate prebuilt UI components, designed for performance and scalability.
+
+---
 
 ## Getting Started
 
-Get started by **creating a new site**.
+### Installation
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+For React Native CLI:
 
 ```bash
-npm init docusaurus@latest my-website classic
+npm install @uncover-ui/react-native
+# or
+yarn add @uncover-ui/react-native
+
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### For Expo Projects
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+Run the following command to add the Expo version:
 
 ```bash
-cd my-website
-npm run start
+npm install @uncover-ui/expo
+# or
+yarn add @uncover-ui/expo
+
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Basic Usage
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Here’s an example of how to use one of the components from the library:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+```tsx
+import React from 'react';
+import { PrimaryButon } from '@uncover-ui/react-native';
+
+export default function App() {
+  return (
+    <PrimaryButon text="Click Me" onPress={() => alert('Button Pressed!')} />
+  );
+}
+```
